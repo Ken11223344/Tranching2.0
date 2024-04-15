@@ -1,0 +1,58 @@
+.ant-drawer-right>.ant-drawer-content-wrapper{
+  width: 100% !important;
+}
+
+.ant-drawer-body{
+  padding: 40px 32px 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: url("../assets/menuBack.svg") no-repeat;
+  background-size:100% 100%;
+  background-color: rgba(25,28,45);
+
+  >.router_name{
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+  }
+
+  >.router_name:nth-child(5){
+    border-bottom: none;
+  }
+
+  .drawer_bot{
+    margin-top: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    >.image_box{
+      display: flex;
+      gap: 20px;
+    }
+
+    >.drawer_button{
+      width: 100%;
+      text-align: center;
+      padding: 14px 0;
+      line-height: 20px;
+      font-size: 16px;
+      color: white;
+      border-radius: 100px;
+      cursor: pointer;
+      background: linear-gradient(244.45deg, #9bbff9 3.54%, #226add 55.42%);
+      transition: all 0.5s;
+    }
+
+    >.drawer_button:hover{
+      background: white;
+      color: black;
+    } 
+  }
+}

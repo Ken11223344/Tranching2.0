@@ -68,7 +68,7 @@
         background: black;
         color: white;
         text-align: center;
-        transition: all 0.5s;
+        // transition: all 0.5s;
         cursor: pointer;
         border: 1px solid white;
         display: flex;
@@ -96,6 +96,51 @@
     
       .menu:hover::after {
         opacity: 0;
+      }
+
+      .self_button{
+        cursor: pointer;
+        width: fit-content;
+        padding: 14px 20px;
+        border-radius: 48px;
+        box-sizing: border-box;
+        background: linear-gradient(244.45deg, #9bbff9 3.54%, #226add 55.42%);
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        // transition: all 0.5s;
+
+        >span{
+            font-size: 15px;
+            line-height: 20px;
+            color: white;
+            transition: all 0.5s;
+        }
+
+        >.img_box{
+            position: relative;
+            width: 24px;
+            height: 24px;
+
+            >img{
+                position: absolute;
+                transition: all 0.5s;
+            }
+        }
+      }
+
+      .self_button:hover{
+        background:white;
+        
+        >span{
+            color: black;
+        }
+
+        >.img_box{
+            >img:nth-child(2){
+                opacity: 0;
+            }
+        }
       }
     }
   }

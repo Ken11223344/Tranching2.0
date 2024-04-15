@@ -93,6 +93,10 @@ video {
   height: 0;
 }
 
+html[data-theme='hiden']{
+  overflow: hidden;
+}
+
 html{
   font-size: 16px;
 }
