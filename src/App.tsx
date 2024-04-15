@@ -2,13 +2,15 @@ import "./App.scss";
 import logo from "./assets/bigLogo.svg";
 import UpRight from "./assets/arrow-up-right.svg";
 import UpRightBlack from "./assets/arrow-up-right-black.svg";
-import symbol from "./assets/symbol.svg"
+import symbol from "./assets/symbol.svg";
+import useWidth from "./utils/widthHooks";
 
 const App = () => {
+  const { innerWidth } = useWidth();
   const RouterList = ["Home", "Features", "Document", "Roadmap", "Partners"];
   const goTidal = () => {
-    window.open("https://tidalchain.com/","_blank")
-  }
+    window.open("https://tidalchain.com/", "_blank");
+  };
 
   return (
     <div className="home">
@@ -16,11 +18,15 @@ const App = () => {
         <div className="border" />
         <div className="header_center">
           <img src={logo} alt="" />
-          <div className="nav_box">
-            {RouterList.map((item, index) => {
-              return <div key={index}>{item}</div>;
-            })}
-          </div>
+          {innerWidth >= 1200 ? (
+            <div className="nav_box">
+              {RouterList.map((item, index) => {
+                return <div key={index}>{item}</div>;
+              })}
+            </div>
+          ) : (
+            <div className="menu">Menu</div>
+          )}
         </div>
       </header>
       <div className="banner">
