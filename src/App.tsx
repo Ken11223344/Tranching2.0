@@ -2,7 +2,7 @@ import "./App.scss";
 import logo from "./assets/bigLogo.svg";
 import UpRight from "./assets/arrow-up-right.svg";
 import UpRightBlack from "./assets/arrow-up-right-black.svg";
-import symbol from "./assets/symbol.svg";
+import symbol from "./assets/symbol.png";
 import useWidth from "./utils/widthHooks";
 import whiteClose from "./assets/whiteClose.svg";
 import blackClose from "./assets/blackClose.svg";
