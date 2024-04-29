@@ -20,7 +20,7 @@ const App = () => {
   const { innerWidth } = useWidth();
   const RouterList = ["Home", "Features", "Document", "Roadmap", "Partners"];
   const goTidal = () => {
-    window.open("https://tidalchain.com/", "_blank");
+    window.open("https://tidalchain.com/", "_blank")
   };
 
   const drawerRef = useRef<MyRef>(null);
