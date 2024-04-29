@@ -73,6 +73,7 @@ const App = () => {
       <div className="banner">
         <div className="banner_content">
           <div>Introducing: Aggregated Blockchains</div>
+
           <div>
             Tidal chain by <span>Tranching Protocol</span>
           </div>
