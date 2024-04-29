@@ -34,14 +34,14 @@
       display: flex;
       align-items: center;
 
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
         justify-content: space-between;
       }
 
-      @media (max-width:425px) {
+      @media (max-width: 425px) {
         padding: 0 16px;
       }
 
@@ -83,7 +83,11 @@
         font-size: 16px;
         line-height: 20px;
         border-radius: 100px;
-        background-image: linear-gradient(244.45deg, #9bbff9 3.54%, #226add 55.42%);
+        background-image: linear-gradient(
+          244.45deg,
+          #9bbff9 3.54%,
+          #226add 55.42%
+        );
         color: white;
         text-align: center;
         transition: all 0.5s;
@@ -93,12 +97,12 @@
         align-items: center;
         justify-content: center;
       }
-    
+
       .menu:hover::after {
         opacity: 0;
       }
 
-      .self_button{
+      .self_button {
         cursor: pointer;
         width: fit-content;
         padding: 14px 20px;
@@ -110,36 +114,36 @@
         gap: 2px;
         // transition: all 0.5s;
 
-        >span{
-            font-size: 15px;
-            line-height: 20px;
-            color: white;
-            transition: all 0.5s;
+        > span {
+          font-size: 15px;
+          line-height: 20px;
+          color: white;
+          transition: all 0.5s;
         }
 
-        >.img_box{
-            position: relative;
-            width: 24px;
-            height: 24px;
+        > .img_box {
+          position: relative;
+          width: 24px;
+          height: 24px;
 
-            >img{
-                position: absolute;
-                transition: all 0.5s;
-            }
+          > img {
+            position: absolute;
+            transition: all 0.5s;
+          }
         }
       }
 
-      .self_button:hover{
-        background:white;
-        
-        >span{
-            color: black;
+      .self_button:hover {
+        background: white;
+
+        > span {
+          color: black;
         }
 
-        >.img_box{
-            >img:nth-child(2){
-                opacity: 0;
-            }
+        > .img_box {
+          > img:nth-child(2) {
+            opacity: 0;
+          }
         }
       }
     }
@@ -152,7 +156,7 @@
     position: relative;
     display: flex;
 
-    @media (max-width:1200px) {
+    @media (max-width: 1200px) {
       width: 100%;
       padding: 0 20px;
       box-sizing: border-box;
@@ -160,7 +164,7 @@
       height: auto;
     }
 
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
       padding: 0 16px;
     }
 
@@ -170,7 +174,7 @@
       flex-direction: column;
       margin: 120px 0;
 
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         width: 100%;
         margin: 48px 0 0;
       }
@@ -194,16 +198,22 @@
         font-weight: bold;
         margin-bottom: 16px;
 
-        @media (max-width:1200px) {
+        @media (max-width: 1200px) {
           font-size: 48px;
           line-height: 56px;
         }
 
         > span {
-          color: rgba(99, 113, 255);
+          background-image: linear-gradient(
+            to bottom,
+            #6371ff 0%,
+            #0aafdc 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           font-weight: bold;
 
-          @media (max-width:1200px) {
+          @media (max-width: 1200px) {
             font-size: 48px;
             line-height: 56px;
           }
@@ -216,14 +226,14 @@
         color: white;
         margin-bottom: 40px;
 
-        @media (max-width:1200px) {
+        @media (max-width: 1200px) {
           font-size: 16px;
           line-height: 24px;
           margin-bottom: 32px;
         }
       }
 
-      .self_button{
+      .self_button {
         cursor: pointer;
         width: fit-content;
         padding: 18px 24px;
@@ -235,47 +245,47 @@
         gap: 10px;
         transition: all 0.5s;
 
-        >span{
-            font-size: 15px;
-            line-height: 20px;
-            color: white;
-            transition: all 0.5s;
+        > span {
+          font-size: 15px;
+          line-height: 20px;
+          color: white;
+          transition: all 0.5s;
         }
 
-        >.img_box{
-            position: relative;
-            width: 24px;
-            height: 24px;
+        > .img_box {
+          position: relative;
+          width: 24px;
+          height: 24px;
 
-            >img{
-                position: absolute;
-                transition: all 0.5s;
-            }
+          > img {
+            position: absolute;
+            transition: all 0.5s;
+          }
         }
       }
 
-      .self_button:hover{
-        background:white;
-        
-        >span{
-            color: black;
+      .self_button:hover {
+        background: white;
+
+        > span {
+          color: black;
         }
 
-        >.img_box{
-            >img:nth-child(2){
-                opacity: 0;
-            }
+        > .img_box {
+          > img:nth-child(2) {
+            opacity: 0;
+          }
         }
       }
     }
 
-    >img{
-        position: absolute;
-        left: 500px;
+    > img {
+      position: absolute;
+      left: 500px;
 
-        @media (max-width:1200px) {
-          position: static;
-        }
+      @media (max-width: 1200px) {
+        position: static;
+      }
     }
   }
 }

@@ -74,7 +74,7 @@ const App = () => {
         <div className="banner_content">
           <div>Introducing: Aggregated Blockchains</div>
           <div>
-            Tranching has evolved into <span>Tidal Chain</span>
+            Tidal chain by <span>Tranching Protocol</span>
           </div>
           <p>
             Harnessing state-of-the-art cross-chain liquidity provisioning
