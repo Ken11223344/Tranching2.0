@@ -91,8 +91,8 @@ const App = () => {
             </div>
           </div>
         </div>
-        <img src={symbol} alt="" />
       </div>
+      <img className="symbol" src={symbol} alt="" />
       <SelfDrawer headHeight={headHeight} ref={drawerRef} />
     </div>
   );

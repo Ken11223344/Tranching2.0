@@ -278,14 +278,19 @@
         }
       }
     }
+  }
+  .symbol{
+    position: absolute;
+    right: 100px;
+    top: 100px;
 
-    > img {
-      position: absolute;
-      left: 500px;
+    @media (max-width:1440px) and (min-width:1201px) {
+      right: 0;
+    }
 
-      @media (max-width: 1200px) {
-        position: static;
-      }
+    @media (max-width: 1200px) {
+      position: static;
+      width: 100%;
     }
   }
 }
